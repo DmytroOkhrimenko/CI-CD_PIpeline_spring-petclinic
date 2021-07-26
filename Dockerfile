@@ -1,4 +1,4 @@
-FROM 14-alpine
+FROM alpine:lts
 COPY *.jar /home/ubuntu/PetArtifact
 EXPOSE 8080
-CMD ["14-alpine", "run"]
+CMD ["alpine:lts", "run"]
