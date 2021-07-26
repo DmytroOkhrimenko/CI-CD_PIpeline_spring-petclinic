@@ -1,4 +1,4 @@
 FROM alpine:latest
-COPY *.jar /home/ubuntu/Artifactory_Storage
+COPY *.jar /mydir/
 EXPOSE 8080
 CMD ["alpine:latest", "run"]
