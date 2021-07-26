@@ -1,4 +1,4 @@
-FROM catalina.sh
+FROM alpine:latest
 COPY *.jar /home/ubuntu/PetArtifact
 EXPOSE 8080
-CMD ["catalina.sh", "run"]
+CMD ["alpine:latest", "run"]
