@@ -1,4 +1,4 @@
-FROM java:8
+FROM ubuntu:latest
 ENV DEBIAN_FRONTEND noninteractive 
 COPY target/*.jar /mydir/
 RUN  apt-get update -y        
