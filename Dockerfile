@@ -1,9 +1,8 @@
-FROM alpine:latest
+FROM java:8
 ENV DEBIAN_FRONTEND noninteractive 
 COPY target/*.jar /mydir/
-RUN  apk update && apk upgrade && apk add bash                
-RUN apk add --no-cache openjdk8
-RUN  apk add --no-cache default-jre
+RUN sudo apt-get update         
+RUN sudo apt-get install openjdk-8-jre
+RUN sudo apt install default-jre
 EXPOSE 8080
 CMD ["java","-jar","/mydir/*.jar"]
-
