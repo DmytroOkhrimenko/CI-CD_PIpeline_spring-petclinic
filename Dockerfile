@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-ENV DEBIAN_FRONTEND noninteractive
+WORKDIR /home/ubuntu/Artifactory_storage
 COPY target/spring-petclinic-2.4.5.jar /home/ubuntu/Artifactory_storage
 RUN  apt-get update -y        
 RUN  apt-get install openjdk-8-jre -y
